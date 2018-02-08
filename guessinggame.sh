@@ -24,18 +24,20 @@ do
   then
     status=0
     echo "$guess is too low"
+    echo "Try again!"
     #echo $status #check for status of loop
   elif [[ $guess -gt $N ]]
   then
     status=0
     echo "$guess is too high"
+    echo "Try again!"
     #echo $status #check for status of loop
   else
     let status=1
-    echo "You guessed correctly that the number of files in the current folder is $N"
+    echo "You guessed correctly that the number of files in the current folder is $N."
+    echo "Congratulations!"
     #echo "$status" #check for status of loop
   fi
 done
     }
 evaluatenumber
-echo "Congratulations"
