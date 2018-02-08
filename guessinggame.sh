@@ -1,11 +1,8 @@
 #!bin/usr/env bash
-# File: letsplayguessthenumberoffilesinthecurrentfolder.sh
+# File: guessinggame.sh
 
 #number of files in the current folder
 N=$(ls -l ./ | grep "^-" | wc -l)
-#echo "control $N" #check number of files
-
-status=0
 
 #function guessnumber
 #ask player for the number of files in the current folder
@@ -13,6 +10,8 @@ function guessnumber {
   echo "What is the number of files in the current directory: "
   read guess
     }
+#variable to control the while loop
+status=0
 
 #function evaluatenumber
 #evaluates the value of the guessed number
