@@ -6,7 +6,7 @@ README.md:
 	echo "---"
 	echo -n "The number of lines of code: " >> README.md
 	cat ./guessinggame.sh | wc -l >> README.md
-	echo "<br>"
+	echo "<br>  "
 	echo -n "Date and time of running make: " >> README.md
 	date -R >> README.md
 
